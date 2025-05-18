@@ -3,23 +3,24 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setLeads } from "@/lib/features/leads/leadsSlice";
+import { Lead } from "@/types/leads";
 
 
-interface Lead {
-  id: number;
-  clientName: string;
-  status: string;
-  phone: string;
-  followUp: string;
-  created: string;
-  assignedTo: string;
-  project: string;
-  budget: number;
-  lastCreated: string;
-}
+// interface Lead {
+//   id: number;
+//   clientName: string;
+//   status: string;
+//   phone: string;
+//   followUp: string;
+//   created: string;
+//   assignedTo: string;
+//   project: string;
+//   budget: number;
+//   lastCreated: string;
+// }
 const dummyLeads: Lead[] = [
   {
-    id: 1,
+    id: "1",
     clientName: "Ashish Keshri",
     status: "Estimate Shared",
     phone: "+91 9876543210",
@@ -31,7 +32,7 @@ const dummyLeads: Lead[] = [
     lastCreated: "2025-05-15",
   },
   {
-    id: 2,
+    id: "2",
     clientName: "Priya Singh",
     status: "Planned Visit",
     phone: "+91 9123456789",
@@ -43,7 +44,7 @@ const dummyLeads: Lead[] = [
     lastCreated: "2025-05-16",
   },
   {
-    id: 3,
+    id: "3",
     clientName: "Vikram Patel",
     status: "Confirmed",
     phone: "+91 9988776655",
@@ -55,7 +56,7 @@ const dummyLeads: Lead[] = [
     lastCreated: "2025-05-17",
   },
     {
-    id: 4,
+    id: "4",
     clientName: "Ashish Keshri",
     status: "Estimate Shared",
     phone: "+91 9876543210",
